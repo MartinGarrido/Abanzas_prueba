@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/prueba" method="POST">
+        <div> <label> Nombre</label>
+            <input type="text" name="nombre"/>
+         </div>
+         <div>
+             <label>Apellido</label>
+             <input type="text" name="apellido"/>
+         </div> 
+         <div>
+            <label>Edad</label>
+            <input type="number" name="edad" />
+        </div> 
+        <div>
+            <label>Nacionalidad</label>
+            <select name="pais">
+                <option value="argentina">Argentina</option>
+                <option value="mexico">Mexico</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="brasil">Brasil</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="uruguay">Uruguay</option>
+            </select>
+        </div> 
+        <div>
+            <label>¿Sos mayor de edad?</label>
+        <input type="radio" name="mayorDeEdad" id="option-yes"/>
+        <label for ="option-yes"> Si</label>
+        <input type="radio" name="mayorDeEdad" id="option-no"/>
+        <label for="option-no">No</label>
+        </div>
+        <div>
+            <label>Selecciona tus hobbies</label>
+           <input name="hobbies-futbol"
+            type="checkbox"
+            id="checkbox-futbol">
+            <label for="checkbox-futbol">Futbol</label>
+
+           <input  name="hobbies-programar"
+           type="checkbox"
+           id="checkbox-programar">
+           <label for="checkbox-programar">Programar</label>
+
+           <input name="hobbies-disenar" 
+           type="checkbox"
+           id="checkbox-disenar">
+           <label for="checkbox-disenar">Diseñar</label>
+        </div>
+        <div>
+            <input type="submit" >
+        </div>
+    </form>
+</body>
+</html>
